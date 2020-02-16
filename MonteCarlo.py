@@ -22,5 +22,10 @@ class MonteCarlo(Axes):
         for point in self.points_all:
             if point in self.points:
                 self.add_point(point, color='green', size=self.point_size)
+                self.points_figure.append(point)
             else:
                 self.add_point(point, color='red', size=self.point_size)
+
+    @property
+    def square(self):
+        return self.square_plate * len(self.points_figure) / len(self.points_all)

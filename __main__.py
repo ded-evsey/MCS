@@ -28,4 +28,5 @@ if __name__ == '__main__':
     monte_carlo.add_figure()
     monte_carlo.calc()
     monte_carlo.show()
+    print(monte_carlo.square)
 
