@@ -43,6 +43,8 @@ class Figure(Point):
         for i, cur_point in enumerate(self.points):  #
             prev_point = self.points[i-1]  #
             # далее происходит магия математики об определении принадлежности точки к фигуре
+            # лучше почитай вот тут
+            # https://habr.com/ru/post/128438/ Принадлежность точки полигону
             if (
                 (
                     (
