@@ -28,6 +28,4 @@ if __name__ == '__main__':
     monte_carlo = monte_carlo.add_figure()
     monte_carlo = monte_carlo.calc()
     monte_carlo = monte_carlo.show()
-    print(monte_carlo.square)
-    #import ipdb;ipdb.set_trace()
-
+    print(f'The area of the figure calculated by the Monte Carlo method ={monte_carlo.square}')
