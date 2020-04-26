@@ -1,5 +1,6 @@
 from MonteCarlo import MonteCarlo
 from general import *
+import numpy as np
 
 if __name__ == '__main__':
     print('Enter count points in figure')
@@ -29,3 +30,7 @@ if __name__ == '__main__':
     monte_carlo = monte_carlo.calc()
     monte_carlo = monte_carlo.show()
     print(f'The area of the figure calculated by the Monte Carlo method = {monte_carlo.square}')
+    print(f'dispersion X = {np.var([item.x for item in monte_carlo.points_all])}')
+    print(f'dispersion Y = {np.var([item.y for item in monte_carlo.points_all])}')
+    print(f'expectation X = {np.mean([item.x for item in monte_carlo.points_all])}')
+    print(f'expectation Y = {np.mean([item.y for item in monte_carlo.points_all])}')
