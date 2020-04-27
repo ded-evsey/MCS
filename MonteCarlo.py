@@ -30,8 +30,8 @@ class MonteCarlo(Axes):
         """
         min_point, max_point = self.plate
         return Point(
-            uniform(min_point.x - 1, max_point.x + 1),
-            uniform(min_point.y - 1, max_point.y + 1)
+            uniform(min_point.x, max_point.x),
+            uniform(min_point.y, max_point.y)
         )
 
     def calc(self):
